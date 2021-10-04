@@ -17,23 +17,22 @@ const Course = (props) => {
 	return (
 		<div>
 			<h1>
-				{courseCode}
-				{props.name}
-				{/* {props.description} */}
+				{courseCode} - {props.name}
 				{/* {props.name} */}
 				{/* {course} */}
 				{/* {code}: */}
 				{/* {name} */}
 			</h1>
 
-			{/* <p>{description}</p> */}
+			{props.description}
 		</div>
 	);
 };
 
 function mapStateToProps(state, ownProps) {
 	const {courses, selectedCourse} = state;
-	return {courses, selectedCourse};
+	let courseInfo = courses.filter((course) => course.code === selectedCourse)[0];
+	return courseInfo;
 }
 
 // connect(mapStateToProps(db));

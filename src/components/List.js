@@ -29,10 +29,10 @@ const List = () => {
 					<Link to="/courses/idsp3380">IDSP 3380: Web Projects 2</Link>
 				</li>
 			</ul>
-			{/* <Route path="/courses/:courseCode" component={Course}/> */}
-			<Route path="/courses/:courseCode">
+			<Route path="/courses/:courseCode" component={Course} />
+			{/* <Route path="/courses/:courseCode">
         <Course />
-			</Route>
+			</Route> */}
 		</div>
 	);
 };
