@@ -36,7 +36,7 @@ function mapStateToProps(state, ownProps) {
 }
 
 // connect(mapStateToProps(db));
-let thing = connect(mapStateToProps(db));
+// let thing = connect(mapStateToProps(db));
 
-export default connect(mapStateToProps)(db);
+export default connect(mapStateToProps)(Course);
 // export default Course;

@@ -4,8 +4,9 @@ import db from './db';
 const reducer = (state = [], action) => {
 	switch (action.type) {
 		case actions.SELECT_COURSE:
-			state = db.filter((course) => course.code === action.payload.code);
-			return state;
+			// state = db.filter((course) => course.code === action.payload.code);
+			let newState = {...state, selectedCourse: action.payload.code};
+			return newState;
 		default:
 			return state;
 	}
