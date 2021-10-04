@@ -17,7 +17,7 @@ const Course = (props) => {
 	return (
 		<div>
 			<h1>
-				{courseCode} - {props.name}
+				{courseCode.toUpperCase()} - {props.name}
 				{/* {props.name} */}
 				{/* {course} */}
 				{/* {code}: */}
