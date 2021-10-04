@@ -11,8 +11,9 @@ const Course = (props) => {
 	const course = store.dispatch(selectCourse(courseCode));
 	// const {code, name, description} = store.getState();
 	// const code = useSelector(state => state);
-	console.log(course);
-	console.log(store.getState());
+	// console.log(course);
+	// console.log(store.getState());
+	console.log(props);
 	return (
 		<div>
 			<h1>
@@ -31,8 +32,8 @@ const Course = (props) => {
 };
 
 function mapStateToProps(state, ownProps) {
-	const {code, name, description} = state;
-	return {code, name, description};
+	const {courses, selectedCourse} = state;
+	return {courses, selectedCourse};
 }
 
 // connect(mapStateToProps(db));
