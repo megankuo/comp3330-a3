@@ -6,7 +6,7 @@ Shared: Nav bar at the top of each page (links to each page)
 [Home page] a short description of Full stack program
 [List page] a list of your current term 3 courses for user’s choice
 [Course page] a short description of a chosen course from List page
-[About page] a short introduction of yourself
+[About page] a short introduction of yourself  
 
 ## Requirements:
 

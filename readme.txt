@@ -1,0 +1,1 @@
+This app shows a navigation bar to Home, About and Course List. It describes the FSWD program, myself, and includes the course descriptions for this term when you select the course.
