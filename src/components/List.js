@@ -1,17 +1,7 @@
 import {Route, Link} from 'react-router-dom';
 import Course from './Course';
 import React from 'react';
-import {connect} from 'react-redux';
-import db from '../db';
 
-// function mapStateToProps(state, ownProps) {
-// 	const {code, name, description} = state;
-// 	return {code, name, description};
-// }
-
-// // export default connect(MapStateToProps)(db);
-// connect(mapStateToProps(db));
-// let thing = connect(mapStateToProps(db));
 
 const List = () => {
 	return (
@@ -42,9 +32,7 @@ const List = () => {
 				</li>
 			</ul>
 			<Route path="/courses/:courseCode" component={Course} />
-			{/* <Route path="/courses/:courseCode">
-        <Course />
-			</Route> */}
+
 		</div>
 	);
 };
